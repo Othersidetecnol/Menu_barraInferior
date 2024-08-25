@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Menu_barraInferior</string>
+    <string name="title_home">HOME</string>
+    <string name="title_os">OS</string>
+    <string name="title_clientes">CLIENTES</string>
+    <string name="title_agenda">AGENDA</string>
+    <string name="title_infos">INFOS</string>
+    <string name="txt_status_serv">STATUS SERVIÇO</string>
+    <string name="txt_status_paga">STATUS PAGAMENTO</string>
+</resources>
