@@ -7,52 +7,6 @@
     tools:context=".ui.clientes.ClientesFragment">
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtimplt_titulo"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="376dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_titulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        android:hint="Adicione o titulo desse serviço" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtimplt_descricao"
-        style="@style/Widget.MaterialComponents.TextView"
-        android:layout_width="376dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="19dp"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="201dp"
-        tools:ignore="MissingConstraints">
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Digite seu E-mail" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <TextView
         android:id="@+id/label_status_serv"
         android:layout_width="273dp"
@@ -64,8 +18,8 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="481dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="407dp" />
 
     <TextView
         android:id="@+id/label_status_paga"
@@ -77,10 +31,11 @@
         android:text="@string/txt_status_paga"
         android:textAlignment="center"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_status_serv" />
+        app:layout_constraintTop_toBottomOf="@+id/label_status_serv"
+        app:layout_constraintVertical_bias="0.098" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -88,4 +43,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="110dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="571dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

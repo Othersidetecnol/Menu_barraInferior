@@ -28,7 +28,7 @@ class ClientesFragment : Fragment() {
         _binding = FragmentClientesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textClientes
+        val textView: TextView = binding.labelStatusServ
         clientesViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
